@@ -73,7 +73,7 @@ export default function Topbar() {
                 src={
                   user.profilePicture
                     ? PF + user.profilePicture
-                    : 'http://localhost:3000/assets/person/profile_0.jpg'
+                    : PF + 'person/profile_0.jpg'
                 }
                 alt=""
                 className="topbarImg"

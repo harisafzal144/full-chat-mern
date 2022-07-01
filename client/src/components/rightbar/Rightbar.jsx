@@ -124,7 +124,9 @@ export default function Rightbar({ user }) {
                 <Card style={{ width: '18rem' }}>
                   <Card.Img variant="top" src={PF + '/person/6.jpeg'} />
                   <Card.Body>
-                    <Card.Title>{u.username}</Card.Title>
+                    <Card.Title>
+                      {u.username.charAt(0).toUpperCase() + u.username.slice(1)}
+                    </Card.Title>
                     <Card.Text>
                       {' '}
                       My email is <span style={{}}></span>
