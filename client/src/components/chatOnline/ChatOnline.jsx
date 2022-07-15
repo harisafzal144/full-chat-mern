@@ -43,7 +43,6 @@ export default function ChatOnline({ onlineUsers, currentId, setCurrentChat }) {
       });
 
       console.log(con_id, 'Conversation Id');
-     
 
       const res = await axios.get(
         `/conversations/find/${currentId}/${user._id}`
