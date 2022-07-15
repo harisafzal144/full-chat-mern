@@ -19,7 +19,8 @@
 .messageText {
   padding: 10px;
   border-radius: 20px;
-  background-color: #1877f2;
+  /* background-color: #1877f2; */
+  background-color: #075e54;
   color: white;
   max-width: 300px;
 }

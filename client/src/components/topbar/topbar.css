@@ -1,7 +1,7 @@
 .topbarContainer {
-  height: 50px;
+  height: 60px;
   width: 100%;
-  background-color: #0dab20;
+  background-color: #075e54;
   display: flex;
   align-items: center;
   position: sticky;
@@ -96,11 +96,11 @@
 }
 .lgbtn {
   border-radius: 14px;
-  background: red;
+  background: #198754;
   color: #ffffff;
   width: 100px;
-  font-size: larger;
-  font-weight: 800;
+  font-size: medium;
+  font-weight: 400;
   border: none;
   border-color: #0dab20;
 }

@@ -37,6 +37,14 @@ export default function ChatOnline({ onlineUsers, currentId, setCurrentChat }) {
   const handleClick = async (user) => {
     console.log(user, `chat with ${user.username}`);
     try {
+      const con_id = await axios.post('/conversations', {
+        senderId: currentId,
+        receiverId: user._id,
+      });
+
+      console.log(con_id, 'Conversation Id');
+     
+
       const res = await axios.get(
         `/conversations/find/${currentId}/${user._id}`
       );

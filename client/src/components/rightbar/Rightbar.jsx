@@ -76,32 +76,33 @@ export default function Rightbar({ user }) {
   const HomeRightbar = ({ currentUser }) => {
     return (
       <>
-        <>
-          <Card>
-            <Card.Img variant="top" src={PF + '/person/noCover.png'} />
-            <Card.Body>
-              <Card.Text
+        <Card>
+          <Card.Img
+            variant="top"
+            src={PF + '/person/photo-1554941426-e9604e34bc94.jpg'}
+          />
+          <Card.Body>
+            <Card.Text
+              style={{
+                textAlign: 'center',
+                color: 'red',
+                fontFamily: 'cursive',
+              }}
+            >
+              <h1
                 style={{
-                  textAlign: 'center',
-                  color: 'red',
                   fontFamily: 'cursive',
                 }}
               >
-                <h1
-                  style={{
-                    fontFamily: 'cursive',
-                  }}
-                >
-                  {' '}
-                  {`Hi welcome in  ikonic chat ${
-                    currentUser.username.charAt(0).toUpperCase() +
-                    currentUser.username.slice(1)
-                  }`}
-                </h1>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </>
+                {' '}
+                {`Hi welcome in  ikonic chat ${
+                  currentUser.username.charAt(0).toUpperCase() +
+                  currentUser.username.slice(1)
+                }`}
+              </h1>
+            </Card.Text>
+          </Card.Body>
+        </Card>
         {/* <div className="container">
           <div className="row"></div>
           <div className="col-4">Online Friends</div>
